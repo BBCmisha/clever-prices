@@ -1,0 +1,71 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background-color: $app-dark-blue;
+    z-index: 99;
+    transition: all .3s linear;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 80px;
+        transition: all .2s linear;
+    }
+
+    &__list {
+        display: flex;
+        font-size: 15px;
+        line-height: 14px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-right: 60px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+    }
+
+    &__activities {
+        display: flex;
+        align-items: center;
+    }
+
+    &__login {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 20px;
+
+        &-icon {
+            margin-right: 10px;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 14px;
+        }
+    }
+
+    &.sticky {
+        background-color: $app-accept;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        .navigation__inner {
+            height: 60px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.input {
+    width: 190px;
+    height: 100%;
+    max-height: 40px;
+    padding-left: 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}

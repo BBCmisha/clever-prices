@@ -1,0 +1,29 @@
+.select {
+    position: relative;
+
+    &::before {
+        content: url('../../../img/icons/arrow_icon.svg');
+        position: absolute;
+        height: 10px;
+        top: 40%;
+        right: 10px;
+        pointer-events: none;
+        transform: rotate(90deg);
+    }
+
+    select {
+        width: 120px;
+        padding: 11px 30px 10px 5px;
+        background: none;
+        border: 0;
+        appearance: none;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 19px;
+        color: $app-dark-blue;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

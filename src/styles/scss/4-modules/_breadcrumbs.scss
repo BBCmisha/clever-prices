@@ -1,0 +1,32 @@
+.breadcrumbs {
+    width: 100%;
+    border-top: 1px solid $app-light-border;
+    border-bottom: 1px solid $app-light-border;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    &__item {
+        display: block;
+        max-width: 91px;
+        height: 15px;
+        overflow: hidden;
+        font-size: 15px;
+        line-height: 14px;
+        color: #73747E;
+        text-decoration: none;
+
+        &.active {
+            color: #242635;
+        }
+
+    }
+
+    &__arrow {
+        
+        margin: 0 7px 0 2px;
+    }
+}
